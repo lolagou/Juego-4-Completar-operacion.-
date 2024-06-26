@@ -7,18 +7,25 @@ public class ProductoAzar : MonoBehaviour
 {
     public Text[] optionsText;
     public GameObject[] objetos;
-    public float randomnumber;
     public GameObject prueba;
+    public float randomnumber;
+    
 
     public Vector3 PosicionObjeto1;
     public Vector3 PosicionObjeto2;
     public Vector3 PosicionObjeto3;
     public Vector3 PosicionObjeto4;
 
+    Vector3 coordenadasArriba = new Vector3(-279f, 125f, 0f);
+    Vector3 coordenadasDerecha = new Vector3(-260f, -133f, 0f);
+    Vector3 coordenadasMedio = new Vector3(12f, -133f, 0f);
+    Vector3 coordenadasIzquierda = new Vector3(262f, -133f, 0f);
+
     public int precioObjeto1;
     public int precioObjeto2;
     public int precioObjeto3;
     public int precioObjeto4;
+    public int Total; 
 
     public Text txtPrecioObjeto1;
     public Text txtPrecioObjeto2;
@@ -61,8 +68,23 @@ public class ProductoAzar : MonoBehaviour
         txtPrecioObjeto3.text = "$ " + precioObjeto3;
         txtPrecioObjeto4.text = "$ " + precioObjeto4;
 
+        int[] arrayPrecios = { precioObjeto1, precioObjeto2, precioObjeto3, precioObjeto4 };
+        int precioAzar = Random.Range(0, arrayPrecios.Length);
+        int precioTotal = precioObjeto4 + arrayPrecios[precioAzar];
+
+        txtPrecioObjeto1.text = ("precio" + precioTotal);
+        Total = precioTotal;
 
 
+
+    }
+
+    void RandomNumer()
+    {
+
+        int azar = Random.Range(0, objetos.Length);
+        Objeto1 = objetos[azar];
+        Objeto1.SetActive(true);
     }
 
     public void Valor_del_Objeto(GameObject Objeto)
