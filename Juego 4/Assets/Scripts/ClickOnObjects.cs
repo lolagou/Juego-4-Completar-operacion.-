@@ -11,7 +11,7 @@ public class ClickOnObjects : MonoBehaviour
 
     void Start()
     {
-        
+        valor = Random.Range(0, 21);
     }
 
 
