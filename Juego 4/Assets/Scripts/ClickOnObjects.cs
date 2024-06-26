@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class ClickOnObjects : MonoBehaviour
 {
+    public int valor;
     public Text text;
     int n = 0; 
 
