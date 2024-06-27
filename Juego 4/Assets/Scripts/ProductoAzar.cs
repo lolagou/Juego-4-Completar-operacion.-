@@ -2,9 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ProductoAzar : MonoBehaviour
 {
+    public Button ResponderBtn;
+
+
+    public GameObject panelNotificaciones;
+    public GameObject panelError;
+    public GameObject panelRespuesta;
+    public Text Btn_jugarOtraVez;
+    public Text textNotificaciones;
+    public Text Btn_MasJuegos;
+
     public Text[] optionsText;
     public GameObject[] objetos;
     public GameObject prueba;
@@ -41,6 +52,8 @@ public class ProductoAzar : MonoBehaviour
     public GameObject Objeto3;
     public GameObject Objeto4;
 
+    public int Selected = -1;
+    public int Ecuacion;
 
     private int Random_Number;
     // Start is called before the first frame update
@@ -69,11 +82,13 @@ public class ProductoAzar : MonoBehaviour
         Instantiate(Objeto4, PosicionObjeto4, objetos[Random_Number].transform.rotation);
 
         //El precio del Objeto1 y se obtiene el component cuando se clickee en el objeto indicado y se le da un valor. 
-
+        
+        
         precioObjeto1 = Objeto1.GetComponent<ClickOnObjects>().valor;
         precioObjeto2 = Objeto2.GetComponent<ClickOnObjects>().valor;
         precioObjeto3 = Objeto3.GetComponent<ClickOnObjects>().valor;
         precioObjeto4 = Objeto4.GetComponent<ClickOnObjects>().valor;
+        
 
         //El texto de cada objeto tiene ser igual al precio asignado a cada objeto. 
 
@@ -81,7 +96,7 @@ public class ProductoAzar : MonoBehaviour
         txtPrecioObjeto2.text = "$ " + precioObjeto2;
         txtPrecioObjeto3.text = "$ " + precioObjeto3;
         txtPrecioObjeto4.text = "$ " + precioObjeto4;
- 
+
 
         //Se crea un array de los precios, donde se indican todos los que hay en los corchetes. Luego se genera un RandomRange
         //Y se hace el calculo que el precioTotal tiene que ser igual al equiation text mas alguno del array de los precios. 
@@ -93,7 +108,8 @@ public class ProductoAzar : MonoBehaviour
         //txtPrecioObjeto1.text = ("$" + precioTotal);
         //Total = precioTotal;
 
-        EquationText.text = "$" + (precioObjeto1 + objetos[Random.Range(1, objetos.Length)].GetComponent<ClickOnObjects>().valor);
+        Ecuacion = objetos[Random.Range(1, objetos.Length)].GetComponent<ClickOnObjects>().valor;
+        EquationText.text = "$" + (precioObjeto1 + Ecuacion);
 
     }
 
@@ -115,8 +131,36 @@ public class ProductoAzar : MonoBehaviour
 
     }
 
-    void RandomizePositions()
+    public void ButtonResponderClick()
     {
-         
+        if (Selected == -1)
+        {
+            panelError.SetActive(true);
+            panelRespuesta.SetActive(false);
+        }
+        else if (Ecuacion == precioObjeto1 + objetos[Selected].GetComponent<ClickOnObjects>().valor)
+        {
+            panelNotificaciones.SetActive(true);
+            panelRespuesta.SetActive(false);
+            textNotificaciones.text = "El resultado es correcto";
+            Btn_jugarOtraVez.text = "REINICIAR DESAFIO";
+            Btn_MasJuegos.text = "Mas Juegos";
+        }
+        else
+        {
+            panelNotificaciones.SetActive(true);
+            panelRespuesta.SetActive(false);
+            textNotificaciones.text = "El resultado es incorrecto";
+            Btn_jugarOtraVez.text = "JUGAR OTRA VEZ";
+            Btn_MasJuegos.text = "Mas Juegos";
+        }
     }
+
+    public void Salir()
+    {
+        SceneManager.LoadScene("Seleccionar Mas Juegos");
+    }
+
+
+
 }
