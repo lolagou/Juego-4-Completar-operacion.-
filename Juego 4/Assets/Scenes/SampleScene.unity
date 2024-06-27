@@ -357,6 +357,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Nu\xF1ez Valcarce_Ignacio_48044118"
       objectReference: {fileID: 0}
+    - target: {fileID: 6710829692423003703, guid: f0912c17b1d34714cae016bcb5e826ff,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0912c17b1d34714cae016bcb5e826ff, type: 3}
 --- !u!1 &477945722
@@ -463,15 +468,15 @@ RectTransform:
   m_GameObject: {fileID: 498615513}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.77, y: 1, z: 1}
+  m_LocalScale: {x: 0.61121, y: 0.61121, z: 0.61121}
   m_Children: []
   m_Father: {fileID: 907349639}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 3.540001, y: 0.00019550323}
-  m_SizeDelta: {x: 9.197189, y: -0.00039672852}
+  m_AnchoredPosition: {x: 0.000015258789, y: 0.000005722046}
+  m_SizeDelta: {x: 94.04213, y: 16.693878}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &498615515
 MonoBehaviour:
@@ -493,11 +498,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 32
     m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 10
-    m_MaxSize: 50
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 300
     m_Alignment: 4
     m_AlignByGeometry: 1
     m_RichText: 1
@@ -827,15 +832,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Alfie_Joaquin_48178973
       objectReference: {fileID: 0}
+    - target: {fileID: 7080187541541510923, guid: bf70735f6d36721449f5f82da65b7046,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7080187541541733163, guid: bf70735f6d36721449f5f82da65b7046,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.3
+      value: 2.03
       objectReference: {fileID: 0}
     - target: {fileID: 7080187541541733163, guid: bf70735f6d36721449f5f82da65b7046,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.8
+      value: 0.37
       objectReference: {fileID: 0}
     - target: {fileID: 7080187541541733163, guid: bf70735f6d36721449f5f82da65b7046,
         type: 3}
@@ -1119,7 +1129,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 18, y: -193}
+  m_AnchoredPosition: {x: 18, y: -189}
   m_SizeDelta: {x: 147.84189, y: 26.244179}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &907349640
@@ -1295,17 +1305,17 @@ PrefabInstance:
     - target: {fileID: 2375395780591306987, guid: e4b455a21b7348b4cb601c118a4f03ce,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.879533
+      value: 7.34
       objectReference: {fileID: 0}
     - target: {fileID: 2375395780591306987, guid: e4b455a21b7348b4cb601c118a4f03ce,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.59
+      value: -0.55
       objectReference: {fileID: 0}
     - target: {fileID: 2375395780591306987, guid: e4b455a21b7348b4cb601c118a4f03ce,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.8618972
+      value: -2.57
       objectReference: {fileID: 0}
     - target: {fileID: 2375395780591306987, guid: e4b455a21b7348b4cb601c118a4f03ce,
         type: 3}
@@ -1351,6 +1361,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bertoloni_Lucas_48243379
+      objectReference: {fileID: 0}
+    - target: {fileID: 2375395780591408331, guid: e4b455a21b7348b4cb601c118a4f03ce,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4b455a21b7348b4cb601c118a4f03ce, type: 3}
@@ -1502,18 +1517,18 @@ MonoBehaviour:
   - {fileID: 1908018247}
   - {fileID: 230897460}
   objetos:
-  - {fileID: 7080187541541510923, guid: bf70735f6d36721449f5f82da65b7046, type: 3}
-  - {fileID: 2375395780591408331, guid: e4b455a21b7348b4cb601c118a4f03ce, type: 3}
-  - {fileID: 2392793810515521863, guid: 58b98bc559a0e5d4390912e739b5b821, type: 3}
-  - {fileID: 6710829692423003703, guid: f0912c17b1d34714cae016bcb5e826ff, type: 3}
-  prueba: {fileID: 6710829692423003703, guid: f0912c17b1d34714cae016bcb5e826ff, type: 3}
+  - {fileID: 2832674058631410816, guid: fa9523b0d6a90424b8f0af7c7ce623ae, type: 3}
+  - {fileID: 5086859817975191049, guid: 54557aeae45130247a909f95e0b16dbb, type: 3}
+  - {fileID: 5119826743520053497, guid: 21add88029763474e9da5ac3af851a62, type: 3}
+  - {fileID: 2794139456509841126, guid: f463ae5023d21c14da74012484f04f7b, type: 3}
+  prueba: {fileID: 0}
   randomnumber: 0
   arrayPrecios: 
   PosicionEquation: {x: 0, y: 0, z: 0}
-  PosicionObjeto1: {x: 3.85, y: 5.27, z: -1.01}
-  PosicionObjeto2: {x: 2.1, y: -0.59, z: -3.2}
-  PosicionObjeto3: {x: 5.37, y: -1.28, z: -4.86}
-  PosicionObjeto4: {x: -0.53, y: 0.45, z: -4.18}
+  PosicionObjeto1: {x: -2.9, y: 5.13, z: 0.68}
+  PosicionObjeto2: {x: -3.4, y: 0.47, z: -4.146136}
+  PosicionObjeto3: {x: 2.03, y: 0.47, z: -4.146136}
+  PosicionObjeto4: {x: 6, y: 0.47, z: -4.146136}
   precioObjeto1: 0
   precioObjeto2: 0
   precioObjeto3: 0
@@ -1776,6 +1791,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: "Nu\xF1ez Gouget_Lola Emma_48180795"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2392793810515521863, guid: 58b98bc559a0e5d4390912e739b5b821,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2392793812160358247, guid: 58b98bc559a0e5d4390912e739b5b821,
         type: 3}

@@ -52,11 +52,7 @@ public class ProductoAzar : MonoBehaviour
         //A cada objeto se lo iguala a la array con randomnumer
         //Luego se utiliza un Instantiate el cual consta de tres partes (_enemyObject, new Vector2(0,8), Quaternion).  
         //En el primero se pone el objeto, luego el vector que en este caso es la posicion y por ultimo la rotacion del objeto que se tuvo a transformar. 
-
-        Random_Number = Random.Range(0, objetos.Length);
-        ObjetoEquation = objetos[Random_Number];
-        Instantiate(ObjetoEquation, PosicionEquation, objetos[Random_Number].transform.rotation); 
-        
+   
         Random_Number = Random.Range(0, objetos.Length);
         Objeto1 = objetos[Random_Number];
         Instantiate(Objeto1, PosicionObjeto1, objetos[Random_Number].transform.rotation);
