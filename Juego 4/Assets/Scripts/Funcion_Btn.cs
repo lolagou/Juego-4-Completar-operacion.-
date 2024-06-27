@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class NewBehaviourScript : MonoBehaviour
 {
@@ -12,25 +13,12 @@ public class NewBehaviourScript : MonoBehaviour
     
     void Start()
     {
-        int precioAzar = Random.Range(0, arrayPrecios.Length);
-        precioTotal = precioObjeto4 + arrayPrecios[precioAzar];
-        
-        notificacionPanel.SetActive(false);
 
-        Btn_jugarOtraVez = buttons[0]; 
-        Btn_Salida = buttons[1]; 
-
-        Btn_Salida.onClick.AddListener(SalirAlMenu);
-        Btn_jugarOtraVez.onClick.AddListener(JugarOtraVez);
-
-    
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    
 
     }
 
@@ -66,12 +54,6 @@ public void SalirAlMenu()
     {
         notificacionPanel.SetActive(false);
         SceneManager.LoadScene("Seleccionar juegos");  
-    }
-
-    public void Resultado(bool result)
-    {
-        isCorrect = result;
-        ShowNotificacion();
     }
 
 }
