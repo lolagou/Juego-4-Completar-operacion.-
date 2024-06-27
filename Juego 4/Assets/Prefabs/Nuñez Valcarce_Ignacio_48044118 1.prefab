@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2794139456509039330}
   - component: {fileID: 2794139456507908130}
   - component: {fileID: 2794139456509841125}
+  - component: {fileID: 114065240836837550}
   m_Layer: 0
   m_Name: "Nu\xF1ez Valcarce_Ignacio_48044118 1"
   m_TagString: Untagged
@@ -92,3 +93,17 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: bfb8fc8609f7e98449c676eb70797948, type: 3}
+--- !u!114 &114065240836837550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2794139456509841126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81e865a9645ee4240874bb29dc9941db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valor: 0
+  text: {fileID: 0}

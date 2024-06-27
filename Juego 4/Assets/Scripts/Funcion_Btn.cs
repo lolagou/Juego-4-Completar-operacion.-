@@ -8,8 +8,14 @@ public class NewBehaviourScript : MonoBehaviour
 {
     // Start is called before the first frame update
     private bool isCorrect;
-    private Button Btn_jugarOtraVez;
+    public Button Btn_jugarOtraVez;
+    public Button ResponderBtn;
+    public Button Btn_MasJuegos;
+
+    public string Selected;
+    public GameObject panelSelected;
     public GameObject notificacionPanel;
+    
     
     void Start()
     {

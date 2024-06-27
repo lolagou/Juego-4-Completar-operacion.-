@@ -36,7 +36,6 @@ public class ProductoAzar : MonoBehaviour
     public Text txtPrecioObjeto4;
     public Text EquationText;
 
-    public GameObject ObjetoEquation; 
     public GameObject Objeto1;
     public GameObject Objeto2;
     public GameObject Objeto3;
@@ -75,7 +74,6 @@ public class ProductoAzar : MonoBehaviour
         precioObjeto2 = Objeto2.GetComponent<ClickOnObjects>().valor;
         precioObjeto3 = Objeto3.GetComponent<ClickOnObjects>().valor;
         precioObjeto4 = Objeto4.GetComponent<ClickOnObjects>().valor;
-        precioEquation = ObjetoEquation.GetComponent<ClickOnObjects>().valor;
 
         //El texto de cada objeto tiene ser igual al precio asignado a cada objeto. 
 
@@ -83,25 +81,24 @@ public class ProductoAzar : MonoBehaviour
         txtPrecioObjeto2.text = "$ " + precioObjeto2;
         txtPrecioObjeto3.text = "$ " + precioObjeto3;
         txtPrecioObjeto4.text = "$ " + precioObjeto4;
-        EquationText.text = "$ " + precioEquation;
+ 
 
         //Se crea un array de los precios, donde se indican todos los que hay en los corchetes. Luego se genera un RandomRange
         //Y se hace el calculo que el precioTotal tiene que ser igual al equiation text mas alguno del array de los precios. 
 
-        int[] arrayPrecios = { precioObjeto1, precioObjeto2, precioObjeto3, precioObjeto4 };
-        int precioAzar = Random.Range(0, arrayPrecios.Length);
-        int precioTotal = precioEquation + arrayPrecios[precioAzar];
+        //int[] arrayPrecios = { precioObjeto1, precioObjeto2, precioObjeto3, precioObjeto4 };
+        //int precioAzar = Random.Range(0, arrayPrecios.Length);
+        //int precioTotal = precioObjeto4 + arrayPrecios[precioAzar];
 
-        txtPrecioObjeto1.text = ("$" + precioTotal);
-        Total = precioTotal;
+        //txtPrecioObjeto1.text = ("$" + precioTotal);
+        //Total = precioTotal;
 
-
+        EquationText.text = "$" + (precioObjeto1 + objetos[Random.Range(1, objetos.Length)].GetComponent<ClickOnObjects>().valor);
 
     }
 
     void RandomNumer()
     {
-
         int azar = Random.Range(0, objetos.Length);
         Objeto1 = objetos[azar];
         Objeto1.SetActive(true);
