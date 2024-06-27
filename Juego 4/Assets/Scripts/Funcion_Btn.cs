@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NewBehaviourScript : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class NewBehaviourScript : MonoBehaviour
     
     void Start()
     {
-       precioAzar = Random.Range(0, arrayPrecios.Length);
+        int precioAzar = Random.Range(0, arrayPrecios.Length);
         precioTotal = precioObjeto4 + arrayPrecios[precioAzar];
         
         notificacionPanel.SetActive(false);
