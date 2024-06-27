@@ -427,7 +427,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 25
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
@@ -551,14 +551,14 @@ RectTransform:
   m_GameObject: {fileID: 507059287}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.78233, y: 0.78233, z: 0.78233}
   m_Children: []
   m_Father: {fileID: 2101075286}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 2}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &507059289
@@ -581,7 +581,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -806,7 +806,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 23
+    m_FontSize: 28
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
@@ -948,15 +948,15 @@ RectTransform:
   m_GameObject: {fileID: 807055290}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.69325, y: 0.69325, z: 0.69325}
   m_Children: []
   m_Father: {fileID: 1814540693}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.94999695, y: 0}
+  m_SizeDelta: {x: 2.7375793, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &807055292
 MonoBehaviour:
@@ -978,7 +978,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -1118,6 +1118,7 @@ GameObject:
   - component: {fileID: 907349642}
   - component: {fileID: 907349641}
   - component: {fileID: 907349640}
+  - component: {fileID: 907349643}
   m_Layer: 5
   m_Name: ResponderBtn
   m_TagString: Untagged
@@ -1190,7 +1191,7 @@ MonoBehaviour:
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1231,6 +1232,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 907349638}
   m_CullTransparentMesh: 0
+--- !u!114 &907349643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907349638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 543c47dea9b745442a4959680b38d596, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Btn_jugarOtraVez: {fileID: 1814540694}
+  ResponderBtn: {fileID: 907349640}
+  Btn_MasJuegos: {fileID: 2101075287}
+  Selected: 
+  panelSelected: {fileID: 1611935748}
+  notificacionPanel: {fileID: 0}
 --- !u!1 &970942780 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2375395780591408331, guid: e4b455a21b7348b4cb601c118a4f03ce,
@@ -1271,7 +1290,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 162, y: 139.56}
+  m_AnchoredPosition: {x: 269, y: 139.56}
   m_SizeDelta: {x: 802.30896, y: 170.88792}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1015600209
@@ -1348,7 +1367,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0, y: 146}
+  m_AnchoredPosition: {x: 92, y: 146}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1136731567
@@ -1491,7 +1510,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1335281397
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2013,6 +2032,7 @@ GameObject:
   - component: {fileID: 1814540696}
   - component: {fileID: 1814540695}
   - component: {fileID: 1814540694}
+  - component: {fileID: 1814540697}
   m_Layer: 5
   m_Name: Btn_jugarOtraVez
   m_TagString: Untagged
@@ -2029,7 +2049,7 @@ RectTransform:
   m_GameObject: {fileID: 1814540692}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.763, y: 1.763, z: 1.763}
+  m_LocalScale: {x: 1.8231184, y: 1.8231184, z: 1.8231184}
   m_Children:
   - {fileID: 807055291}
   m_Father: {fileID: 882657582}
@@ -2079,7 +2099,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1814540695}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: 543c47dea9b745442a4959680b38d596, type: 3}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1814540695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2115,6 +2146,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1814540692}
   m_CullTransparentMesh: 0
+--- !u!114 &1814540697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814540692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 543c47dea9b745442a4959680b38d596, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Btn_jugarOtraVez: {fileID: 1814540694}
+  ResponderBtn: {fileID: 907349640}
+  Btn_MasJuegos: {fileID: 2101075287}
+  Selected: 
+  panelSelected: {fileID: 1611935748}
+  notificacionPanel: {fileID: 0}
 --- !u!1 &1908018245
 GameObject:
   m_ObjectHideFlags: 0
@@ -2311,6 +2360,7 @@ GameObject:
   - component: {fileID: 2101075289}
   - component: {fileID: 2101075288}
   - component: {fileID: 2101075287}
+  - component: {fileID: 2101075290}
   m_Layer: 5
   m_Name: Btn_MasJuegos
   m_TagString: Untagged
@@ -2335,7 +2385,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11.921, y: -36}
+  m_AnchoredPosition: {x: 11.921, y: -26}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2101075287
@@ -2377,7 +2427,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2101075288}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: 543c47dea9b745442a4959680b38d596, type: 3}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2101075288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2413,6 +2474,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2101075285}
   m_CullTransparentMesh: 0
+--- !u!114 &2101075290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101075285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 543c47dea9b745442a4959680b38d596, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Btn_jugarOtraVez: {fileID: 1814540694}
+  ResponderBtn: {fileID: 907349640}
+  Btn_MasJuegos: {fileID: 2101075287}
+  Selected: 
+  panelSelected: {fileID: 1611935748}
+  notificacionPanel: {fileID: 0}
 --- !u!1 &1882183723325843345
 GameObject:
   m_ObjectHideFlags: 0

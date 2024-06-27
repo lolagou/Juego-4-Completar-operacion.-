@@ -97,12 +97,12 @@ public class ProductoAzar : MonoBehaviour
 
     }
 
-    void RandomNumer()
-    {
-        int azar = Random.Range(0, objetos.Length);
-        Objeto1 = objetos[azar];
-        Objeto1.SetActive(true);
-    }
+    //void RandomNumer()
+    // {
+    //    int azar = Random.Range(0, objetos.Length);
+    //    Objeto1 = objetos[azar];
+    //    Objeto1.SetActive(true);
+    //}
 
     public void Valor_del_Objeto(GameObject Objeto)
     { 
