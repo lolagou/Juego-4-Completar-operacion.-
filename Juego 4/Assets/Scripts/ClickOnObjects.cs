@@ -35,5 +35,4 @@ public class ClickOnObjects : MonoBehaviour
             n = 0;
         }
     }
-
 }
