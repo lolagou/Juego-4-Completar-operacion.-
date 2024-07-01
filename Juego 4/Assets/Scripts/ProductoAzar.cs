@@ -28,7 +28,7 @@ public class ProductoAzar : MonoBehaviour
     void Start()
     {
         int dinero1 = Random.Range(0, 20);
-        int dinerototal = Random.Range(dinero1 + 1, dinero1 + 20);
+        int dinerototal = Random.Range(dinero1, dinero1 + 20);
         int dinero2 = dinerototal - dinero1;
         valor1.text = "$" + dinero1.ToString();
         valorTotal.text = "$" + dinerototal.ToString();
