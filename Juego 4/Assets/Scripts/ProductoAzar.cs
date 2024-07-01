@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+
 public class ProductoAzar : MonoBehaviour
 {
     //public Button ResponderBtn;
@@ -23,6 +24,30 @@ public class ProductoAzar : MonoBehaviour
     public Text Articulo2;
     public Text Articulo3;
     public Text[] valoresPosibles;
+
+
+    public Button ResponderBtn;
+
+
+
+    public GameObject panelNotificaciones;
+    public GameObject panelError;
+    public GameObject panelRespuesta;
+    public Text Btn_jugarOtraVez;
+    public Text textNotificaciones;
+    public Text Btn_MasJuegos;
+
+    public Text[] optionsText;
+    public GameObject[] objetos;
+    public GameObject prueba;
+
+    public GameObject Objeto3;
+    public GameObject Objeto4;
+
+    public int Selected = -1;
+    public int Ecuacion;
+
+    private int Random_Number;
 
     // Start is called before the first frame update
     void Start()
@@ -66,33 +91,5 @@ public class ProductoAzar : MonoBehaviour
     {
 
     }
-    public void ButtonResponderClick()
-    {
-       // if (Selected == -1)
-       // {
-       //     panelError.SetActive(true);
-       //     panelRespuesta.SetActive(false);
-       // }
-      //  else if (Ecuacion == precioObjeto1 + objetos[Selected].GetComponent<ClickOnObjects>().valor)
-      //  {
-       //     panelNotificaciones.SetActive(true);
-       //     panelRespuesta.SetActive(false);
-       //     textNotificaciones.text = "El resultado es correcto";
-       //     Btn_jugarOtraVez.text = "REINICIAR DESAFIO";
-      //      Btn_MasJuegos.text = "Mas Juegos";
-     //   }
-     //   else
-     //   {
-     //       panelNotificaciones.SetActive(true);
-      //      panelRespuesta.SetActive(false);
-       //     textNotificaciones.text = "El resultado es incorrecto";
-       //     Btn_jugarOtraVez.text = "JUGAR OTRA VEZ";
-       //     Btn_MasJuegos.text = "Mas Juegos";
-      //  }
-    }
-
-    public void Salir()
-    {
-       // SceneManager.LoadScene("Seleccionar Mas Juegos");
-    }
+    
 }
