@@ -6,35 +6,25 @@ using UnityEngine.SceneManagement;
 
 public class ResponderScript : MonoBehaviour
 {
-    public Button ResponderBtn;
-
-
-
+    public GameObject ResponderBtn;
+    
     public GameObject panelNotificaciones;
     public GameObject panelError;
     public GameObject panelRespuesta;
-    public Text Btn_jugarOtraVez;
+    public GameObject Btn_jugarOtraVez;
     public Text textNotificaciones;
-    public Text Btn_MasJuegos;
-
-    public Text[] optionsText;
+    public GameObject Btn_MasJuegos;
     public GameObject[] objetos;
-    public GameObject prueba;
 
-    public GameObject Objeto3;
-    public GameObject Objeto4;
+    public string Selected;
 
-    public int Selected = -1;
-    public int Ecuacion;
-
-    public GameObject[] Objetos;
     public Text valor1;
     public Text valorTotal;
+
     public Text Articulo1;
     public Text Articulo2;
     public Text Articulo3;
-    public Text[] valoresPosibles;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,28 +36,144 @@ public class ResponderScript : MonoBehaviour
     {
         
     }
-    public void ButtonResponderClick()
+    public void cambioColorD()
     {
-        if (Selected == -1)
+        Articulo1.color = Color.red;
+        Articulo2.color = Color.black;
+        Articulo3.color = Color.black;
+
+        Selected = "1";
+    }
+    public void cambioColorM()
+    {
+        Articulo1.color = Color.red;
+        Articulo2.color = Color.black;
+        Articulo3.color = Color.black;
+
+        Selected = "2";
+    }
+    public void cambioColorI()
+    {
+        Articulo1.color = Color.red;
+        Articulo2.color = Color.black;
+        Articulo3.color = Color.black;
+
+        Selected = "3";
+    }
+
+
+    public void BotonApretar()
+    {
+        if (Selected == "")
         {
             panelError.SetActive(true);
             panelRespuesta.SetActive(false);
         }
-        else if (valorTotal.text == valor1.text + objetos[Selected].GetComponent<ClickOnObjects>().valor)
+
+        if (Selected == "1")
+        {
+            panelNotificaciones.SetActive(true);
+            if (precioDeArriba + precioDeAbajoD == Valor)
+            {
+                txtGanaste.text = "Ganaste";
+                Buttontxtjugar.text = "Reiniciar el desafío";
+            }
+            else
+            {
+                txtGanaste.text = "Perdiste";
+                Buttontxtjugar.text = "Volver a intentarlo";
+            }
+        }
+
+        else if (Selected == "2")
+        {
+            panelNotificaciones.SetActive(true);
+            if (precioDeArriba + precioDeAbajoI == Total)
+            {
+                txtGanaste.text = "Ganaste";
+                Buttontxtjugar.text = "Reiniciar el desafío";
+            }
+            else
+            {
+                txtGanaste.text = "Perdiste";
+                Buttontxtjugar.text = "Volver a intentarlo";
+            }
+        }
+
+        else if (Selected == "3")
+        {
+            panelNotificaciones.SetActive(true);
+            if (precioDeArriba + precioDeAbajoM == Total)
+            {
+                txtGanaste.text = "Ganaste";
+                Buttontxtjugar.text = "Reiniciar el desafío";
+            }
+            else
+            {
+                txtGanaste.text = "Perdiste";
+                Buttontxtjugar.text = "Volver a intentarlo";
+            }
+        }
+    }
+
+    public void BotonCerrarPanel()
+    {
+        panelSelected.SetActive(false);
+    }
+    public void BotonCerrarPanelNotificaciones()
+    {
+        if (Buttontxtjugar.text == "Volver a intentarlo")
+        {
+            panelNotificaciones.SetActive(false);
+        }
+    }
+    public void ReiniciarJuego()
+    {
+        if (Buttontxtjugar.text == "Reiniciar el desafío")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            GenerarRandom();
+        }
+
+    }
+    public void CambiarEscena()
+    {
+        SceneManager.LoadScene("SeleccionarJuego");
+    }
+}
+
+
+public void ButtonResponderClick()
+    {
+        if (Selected == "")
+        {
+            panelError.SetActive(true);
+            panelRespuesta.SetActive(false);
+        }
+        else if (Selected = n)
         {
             panelNotificaciones.SetActive(true);
             panelRespuesta.SetActive(false);
             textNotificaciones.text = "El resultado es correcto";
-            Btn_jugarOtraVez.text = "REINICIAR DESAFIO";
-            Btn_MasJuegos.text = "Mas Juegos";
+            Btn_jugarOtraVez.SetActive(true);
+            Btn_MasJuegos.SetActive(true);
         }
-        else
+        else if (Selected =n2)
         {
             panelNotificaciones.SetActive(true);
             panelRespuesta.SetActive(false);
             textNotificaciones.text = "El resultado es incorrecto";
-            Btn_jugarOtraVez.text = "JUGAR OTRA VEZ";
-            Btn_MasJuegos.text = "Mas Juegos";
+            Btn_jugarOtraVez.SetActive(true);
+            Btn_MasJuegos.SetActive(true);
+        }
+
+        else if (Selected = n3)
+        {
+            panelNotificaciones.SetActive(true);
+            panelRespuesta.SetActive(false);
+            textNotificaciones.text = "El resultado es incorrecto";
+            Btn_jugarOtraVez.SetActive(true);
+            Btn_MasJuegos.SetActive(true);
         }
     }
 

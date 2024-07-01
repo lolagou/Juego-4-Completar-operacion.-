@@ -2,20 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 
 public class ProductoAzar : MonoBehaviour
 {
-    //public Button ResponderBtn;
-    //public GameObject panelNotificaciones;
-    //public GameObject panelError;
-    //public GameObject panelRespuesta;
-    //public Text Btn_jugarOtraVez;
-    //public Text textNotificaciones;
-    //public Text Btn_MasJuegos;
-    //public int Selected = -1;
-    //public int Ecuacion;
 
     public GameObject[] Objetos;
     public Text valor1;
@@ -25,18 +15,6 @@ public class ProductoAzar : MonoBehaviour
     public Text Articulo3;
     public Text[] valoresPosibles;
 
-
-    public Button ResponderBtn;
-
-
-
-    public GameObject panelNotificaciones;
-    public GameObject panelError;
-    public GameObject panelRespuesta;
-    public Text Btn_jugarOtraVez;
-    public Text textNotificaciones;
-    public Text Btn_MasJuegos;
-
     public Text[] optionsText;
     public GameObject[] objetos;
     public GameObject prueba;
@@ -44,7 +22,6 @@ public class ProductoAzar : MonoBehaviour
     public GameObject Objeto3;
     public GameObject Objeto4;
 
-    public int Selected = -1;
     public int Ecuacion;
 
     private int Random_Number;

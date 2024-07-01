@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -587,7 +587,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Seleccionar Juegos
+  m_Text: Mas juegos
 --- !u!222 &507059290
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1041,7 +1041,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &807055291
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1289,8 +1289,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: f88b090b72bce8c468b7b61ba701d87b, type: 3}
-        m_MethodName: 
+      - m_Target: {fileID: 2142613292}
+        m_MethodName: ButtonResponderClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1344,9 +1344,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 907349638}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543c47dea9b745442a4959680b38d596, type: 3}
+  m_Script: {fileID: 11500000, guid: f88b090b72bce8c468b7b61ba701d87b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ResponderBtn: {fileID: 907349638}
+  panelNotificaciones: {fileID: 1356074758}
+  panelError: {fileID: 1611935748}
+  panelRespuesta: {fileID: 692973579}
+  Btn_jugarOtraVez: {fileID: 1814540692}
+  textNotificaciones: {fileID: 1728444144}
+  Btn_MasJuegos: {fileID: 2101075285}
+  objetos: []
+  Selected: -1
+  valor1: {fileID: 1715147356}
+  valorTotal: {fileID: 1015600209}
 --- !u!1 &1015600207
 GameObject:
   m_ObjectHideFlags: 0
@@ -1779,7 +1790,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -160, y: 69.116}
+  m_AnchoredPosition: {x: -0, y: -38}
   m_SizeDelta: {x: -640.00006, y: -420.77954}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1356074760
@@ -1827,6 +1838,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1497020251}
   - component: {fileID: 1497020250}
+  - component: {fileID: 1497020252}
   m_Layer: 0
   m_Name: ScriptConteiner
   m_TagString: Untagged
@@ -1860,19 +1872,11 @@ MonoBehaviour:
   - {fileID: 2073956001}
   - {fileID: 1908018247}
   - {fileID: 230897460}
-  ResponderBtn: {fileID: 0}
-  panelNotificaciones: {fileID: 0}
-  panelError: {fileID: 0}
-  panelRespuesta: {fileID: 0}
-  Btn_jugarOtraVez: {fileID: 0}
-  textNotificaciones: {fileID: 0}
-  Btn_MasJuegos: {fileID: 0}
   optionsText: []
   objetos: []
   prueba: {fileID: 0}
   Objeto3: {fileID: 0}
   Objeto4: {fileID: 0}
-  Selected: -1
   Ecuacion: 0
 --- !u!4 &1497020251
 Transform:
@@ -1886,8 +1890,31 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1497020252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497020249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f88b090b72bce8c468b7b61ba701d87b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ResponderBtn: {fileID: 907349638}
+  panelNotificaciones: {fileID: 1356074758}
+  panelError: {fileID: 1611935748}
+  panelRespuesta: {fileID: 692973579}
+  Btn_jugarOtraVez: {fileID: 1814540692}
+  textNotificaciones: {fileID: 1728444144}
+  Btn_MasJuegos: {fileID: 2101075285}
+  objetos: []
+  Selected: -1
+  valor1: {fileID: 0}
+  valorTotal: {fileID: 0}
 --- !u!1 &1516784099 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6710829692423003697, guid: f0912c17b1d34714cae016bcb5e826ff,
@@ -2348,7 +2375,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1814540693
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2366,7 +2393,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.000045776367}
+  m_AnchoredPosition: {x: 3, y: -2}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1814540694
@@ -2464,9 +2491,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1814540692}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543c47dea9b745442a4959680b38d596, type: 3}
+  m_Script: {fileID: 11500000, guid: f88b090b72bce8c468b7b61ba701d87b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ResponderBtn: {fileID: 907349638}
+  panelNotificaciones: {fileID: 1356074758}
+  panelError: {fileID: 1611935748}
+  panelRespuesta: {fileID: 692973579}
+  Btn_jugarOtraVez: {fileID: 1814540692}
+  textNotificaciones: {fileID: 1728444144}
+  Btn_MasJuegos: {fileID: 2101075285}
+  objetos: []
+  Selected: -1
+  valor1: {fileID: 1715147356}
+  valorTotal: {fileID: 1015600209}
 --- !u!1 &1908018245
 GameObject:
   m_ObjectHideFlags: 0
@@ -2689,7 +2727,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2101075286
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2707,7 +2745,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -250.07903, y: 107}
+  m_AnchoredPosition: {x: 2, y: -4}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2101075287
@@ -2805,9 +2843,74 @@ MonoBehaviour:
   m_GameObject: {fileID: 2101075285}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543c47dea9b745442a4959680b38d596, type: 3}
+  m_Script: {fileID: 11500000, guid: f88b090b72bce8c468b7b61ba701d87b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ResponderBtn: {fileID: 907349638}
+  panelNotificaciones: {fileID: 1356074758}
+  panelError: {fileID: 1611935748}
+  panelRespuesta: {fileID: 692973579}
+  Btn_jugarOtraVez: {fileID: 1814540692}
+  textNotificaciones: {fileID: 1728444144}
+  Btn_MasJuegos: {fileID: 2101075285}
+  objetos: []
+  Selected: -1
+  valor1: {fileID: 1715147356}
+  valorTotal: {fileID: 1015600209}
+--- !u!1 &2142613291
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2142613293}
+  - component: {fileID: 2142613292}
+  m_Layer: 0
+  m_Name: ResponderScript
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2142613292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142613291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f88b090b72bce8c468b7b61ba701d87b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ResponderBtn: {fileID: 907349638}
+  panelNotificaciones: {fileID: 1356074758}
+  panelError: {fileID: 1611935748}
+  panelRespuesta: {fileID: 692973579}
+  Btn_jugarOtraVez: {fileID: 1814540692}
+  textNotificaciones: {fileID: 1728444144}
+  Btn_MasJuegos: {fileID: 2101075285}
+  objetos: []
+  Selected: -1
+  valor1: {fileID: 1715147356}
+  valorTotal: {fileID: 1015600209}
+--- !u!4 &2142613293
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142613291}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 123.14461, y: 44.70997, z: 1.9004211}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1882183723325843345
 GameObject:
   m_ObjectHideFlags: 0
