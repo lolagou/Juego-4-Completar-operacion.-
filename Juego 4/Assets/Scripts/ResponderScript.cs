@@ -8,22 +8,32 @@ public class ResponderScript : MonoBehaviour
 {
     public GameObject ResponderBtn;
     
-    public GameObject panelNotificaciones;
+
     public GameObject panelError;
     public GameObject panelRespuesta;
-    public GameObject Btn_jugarOtraVez;
     public Text textNotificaciones;
-    public GameObject Btn_MasJuegos;
-    public GameObject[] objetos;
 
     public string Selected;
+    public GameObject panelSelected;
+    public GameObject panelNotificaciones;
+    public Text txtGanaste;
+    public Button btnVolverajugar;
+    public Text Buttontxtjugar;
+    public Button btnSalir;
+    public Text ButtontxtSalir;
 
-    public Text valor1;
-    public Text valorTotal;
+    private int Total;
+    private int Valor;
 
     public Text Articulo1;
     public Text Articulo2;
     public Text Articulo3;
+
+    int precio0;
+    int precio1;
+    int precio2;
+    int precio3;    
+
 
     // Start is called before the first frame update
     void Start()
@@ -64,16 +74,22 @@ public class ResponderScript : MonoBehaviour
 
     public void BotonApretar()
     {
+
+        
+
         if (Selected == "")
         {
+
             panelError.SetActive(true);
             panelRespuesta.SetActive(false);
+            textNotificaciones.text = "Debes seleccionar un producto";
+
         }
 
         if (Selected == "1")
         {
             panelNotificaciones.SetActive(true);
-            if (precioDeArriba + precioDeAbajoD == Valor)
+            if (precio0 + precio1 == Valor)
             {
                 txtGanaste.text = "Ganaste";
                 Buttontxtjugar.text = "Reiniciar el desafío";
@@ -88,7 +104,7 @@ public class ResponderScript : MonoBehaviour
         else if (Selected == "2")
         {
             panelNotificaciones.SetActive(true);
-            if (precioDeArriba + precioDeAbajoI == Total)
+            if (precio0 + precio2 == Total)
             {
                 txtGanaste.text = "Ganaste";
                 Buttontxtjugar.text = "Reiniciar el desafío";
@@ -103,7 +119,7 @@ public class ResponderScript : MonoBehaviour
         else if (Selected == "3")
         {
             panelNotificaciones.SetActive(true);
-            if (precioDeArriba + precioDeAbajoM == Total)
+            if (precio0 + precio3 == Total)
             {
                 txtGanaste.text = "Ganaste";
                 Buttontxtjugar.text = "Reiniciar el desafío";
@@ -132,53 +148,12 @@ public class ResponderScript : MonoBehaviour
         if (Buttontxtjugar.text == "Reiniciar el desafío")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            GenerarRandom();
+            //randomrange; 
         }
 
     }
     public void CambiarEscena()
     {
         SceneManager.LoadScene("SeleccionarJuego");
-    }
-}
-
-
-public void ButtonResponderClick()
-    {
-        if (Selected == "")
-        {
-            panelError.SetActive(true);
-            panelRespuesta.SetActive(false);
-        }
-        else if (Selected = n)
-        {
-            panelNotificaciones.SetActive(true);
-            panelRespuesta.SetActive(false);
-            textNotificaciones.text = "El resultado es correcto";
-            Btn_jugarOtraVez.SetActive(true);
-            Btn_MasJuegos.SetActive(true);
-        }
-        else if (Selected =n2)
-        {
-            panelNotificaciones.SetActive(true);
-            panelRespuesta.SetActive(false);
-            textNotificaciones.text = "El resultado es incorrecto";
-            Btn_jugarOtraVez.SetActive(true);
-            Btn_MasJuegos.SetActive(true);
-        }
-
-        else if (Selected = n3)
-        {
-            panelNotificaciones.SetActive(true);
-            panelRespuesta.SetActive(false);
-            textNotificaciones.text = "El resultado es incorrecto";
-            Btn_jugarOtraVez.SetActive(true);
-            Btn_MasJuegos.SetActive(true);
-        }
-    }
-
-    public void Salir()
-    {
-         SceneManager.LoadScene("Seleccionar Mas Juegos");
     }
 }

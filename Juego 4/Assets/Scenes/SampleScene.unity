@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -212,7 +212,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 882657582}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1195,6 +1195,7 @@ RectTransform:
   - {fileID: 692973580}
   - {fileID: 1356074759}
   - {fileID: 1715147355}
+  - {fileID: 1825280461}
   - {fileID: 1136731566}
   - {fileID: 2073956000}
   - {fileID: 1908018246}
@@ -1290,7 +1291,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2142613292}
-        m_MethodName: ButtonResponderClick
+        m_MethodName: BotonApretar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1348,16 +1349,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ResponderBtn: {fileID: 907349638}
-  panelNotificaciones: {fileID: 1356074758}
   panelError: {fileID: 1611935748}
   panelRespuesta: {fileID: 692973579}
-  Btn_jugarOtraVez: {fileID: 1814540692}
   textNotificaciones: {fileID: 1728444144}
-  Btn_MasJuegos: {fileID: 2101075285}
-  objetos: []
   Selected: -1
-  valor1: {fileID: 1715147356}
-  valorTotal: {fileID: 1015600209}
+  panelSelected: {fileID: 0}
+  panelNotificaciones: {fileID: 1356074758}
+  txtGanaste: {fileID: 0}
+  btnVolverajugar: {fileID: 1814540694}
+  Buttontxtjugar: {fileID: 0}
+  btnSalir: {fileID: 1335281398}
+  ButtontxtSalir: {fileID: 0}
   Articulo1: {fileID: 0}
   Articulo2: {fileID: 0}
   Articulo3: {fileID: 0}
@@ -1391,7 +1393,7 @@ RectTransform:
   m_LocalScale: {x: 0.9455926, y: 0.9455926, z: 0.9455926}
   m_Children: []
   m_Father: {fileID: 882657582}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1465,15 +1467,15 @@ RectTransform:
   m_GameObject: {fileID: 1136731565}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.127893, y: 2.127893, z: 2.127893}
+  m_LocalScale: {x: 1.7890048, y: 1.7890048, z: 1.7890048}
   m_Children: []
   m_Father: {fileID: 882657582}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.5, y: 125}
-  m_SizeDelta: {x: 103.16879, y: 30}
+  m_AnchoredPosition: {x: 141, y: 88}
+  m_SizeDelta: {x: 222.07593, y: 75.953415}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1136731567
 MonoBehaviour:
@@ -1495,7 +1497,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 39
+    m_FontSize: 46
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -1880,6 +1882,7 @@ MonoBehaviour:
   - {fileID: 1908018247}
   - {fileID: 230897460}
   dinerototal: 0
+  indiceCorrecto: 0
 --- !u!4 &1497020251
 Transform:
   m_ObjectHideFlags: 0
@@ -1907,19 +1910,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ResponderBtn: {fileID: 907349638}
-  panelNotificaciones: {fileID: 1356074758}
   panelError: {fileID: 1611935748}
   panelRespuesta: {fileID: 692973579}
-  Btn_jugarOtraVez: {fileID: 1814540692}
   textNotificaciones: {fileID: 1728444144}
-  Btn_MasJuegos: {fileID: 2101075285}
-  objetos: []
   Selected: -1
-  valor1: {fileID: 0}
-  valorTotal: {fileID: 0}
-  Articulo1: {fileID: 0}
-  Articulo2: {fileID: 0}
-  Articulo3: {fileID: 0}
+  panelSelected: {fileID: 0}
+  panelNotificaciones: {fileID: 1356074758}
+  txtGanaste: {fileID: 0}
+  btnVolverajugar: {fileID: 0}
+  Buttontxtjugar: {fileID: 0}
+  btnSalir: {fileID: 0}
+  ButtontxtSalir: {fileID: 0}
+  Articulo1: {fileID: 2073956001}
+  Articulo2: {fileID: 1908018247}
+  Articulo3: {fileID: 230897460}
 --- !u!1 &1516784099 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6710829692423003697, guid: f0912c17b1d34714cae016bcb5e826ff,
@@ -2063,7 +2067,7 @@ RectTransform:
   - {fileID: 649327855}
   - {fileID: 1335281397}
   m_Father: {fileID: 882657582}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2225,7 +2229,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -263, y: 78.996}
+  m_AnchoredPosition: {x: -263, y: 99}
   m_SizeDelta: {x: 209.64124, y: 69.492645}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1715147356
@@ -2500,19 +2504,97 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ResponderBtn: {fileID: 907349638}
-  panelNotificaciones: {fileID: 1356074758}
   panelError: {fileID: 1611935748}
   panelRespuesta: {fileID: 692973579}
-  Btn_jugarOtraVez: {fileID: 1814540692}
   textNotificaciones: {fileID: 1728444144}
-  Btn_MasJuegos: {fileID: 2101075285}
-  objetos: []
   Selected: -1
-  valor1: {fileID: 1715147356}
-  valorTotal: {fileID: 1015600209}
+  panelSelected: {fileID: 0}
+  panelNotificaciones: {fileID: 1356074758}
+  txtGanaste: {fileID: 0}
+  btnVolverajugar: {fileID: 0}
+  Buttontxtjugar: {fileID: 0}
+  btnSalir: {fileID: 0}
+  ButtontxtSalir: {fileID: 0}
   Articulo1: {fileID: 0}
   Articulo2: {fileID: 0}
   Articulo3: {fileID: 0}
+--- !u!1 &1825280460
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1825280461}
+  - component: {fileID: 1825280463}
+  - component: {fileID: 1825280462}
+  m_Layer: 5
+  m_Name: TextGanaste
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1825280461
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825280460}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 882657582}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -259, y: -104}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1825280462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825280460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Ganaste
+--- !u!222 &1825280463
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825280460}
+  m_CullTransparentMesh: 0
 --- !u!1 &1908018245
 GameObject:
   m_ObjectHideFlags: 0
@@ -2544,7 +2626,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 882657582}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2655,7 +2737,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 882657582}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2855,16 +2937,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ResponderBtn: {fileID: 907349638}
-  panelNotificaciones: {fileID: 1356074758}
   panelError: {fileID: 1611935748}
   panelRespuesta: {fileID: 692973579}
-  Btn_jugarOtraVez: {fileID: 1814540692}
   textNotificaciones: {fileID: 1728444144}
-  Btn_MasJuegos: {fileID: 2101075285}
-  objetos: []
   Selected: -1
-  valor1: {fileID: 1715147356}
-  valorTotal: {fileID: 1015600209}
+  panelSelected: {fileID: 0}
+  panelNotificaciones: {fileID: 1356074758}
+  txtGanaste: {fileID: 0}
+  btnVolverajugar: {fileID: 0}
+  Buttontxtjugar: {fileID: 0}
+  btnSalir: {fileID: 0}
+  ButtontxtSalir: {fileID: 0}
   Articulo1: {fileID: 0}
   Articulo2: {fileID: 0}
   Articulo3: {fileID: 0}
@@ -2898,19 +2981,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ResponderBtn: {fileID: 907349638}
-  panelNotificaciones: {fileID: 1356074758}
   panelError: {fileID: 1611935748}
   panelRespuesta: {fileID: 692973579}
-  Btn_jugarOtraVez: {fileID: 1814540692}
   textNotificaciones: {fileID: 1728444144}
-  Btn_MasJuegos: {fileID: 2101075285}
-  objetos: []
   Selected: -1
-  valor1: {fileID: 1715147356}
-  valorTotal: {fileID: 1015600209}
-  Articulo1: {fileID: 0}
-  Articulo2: {fileID: 0}
-  Articulo3: {fileID: 0}
+  panelSelected: {fileID: 0}
+  panelNotificaciones: {fileID: 1356074758}
+  txtGanaste: {fileID: 1825280462}
+  btnVolverajugar: {fileID: 0}
+  Buttontxtjugar: {fileID: 0}
+  btnSalir: {fileID: 0}
+  ButtontxtSalir: {fileID: 0}
+  Articulo1: {fileID: 2073956001}
+  Articulo2: {fileID: 1908018247}
+  Articulo3: {fileID: 230897460}
 --- !u!4 &2142613293
 Transform:
   m_ObjectHideFlags: 0
